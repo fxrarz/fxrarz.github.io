@@ -35,6 +35,22 @@
   font-size: 15px;
   color: white;
 }
+
+.flex-container-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: Orange;
+}
+.flex-container-link > a {
+  background-color: Pink;
+  width: 250px;
+  margin-top: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: Yellow;
+}
 </style>
 
 
@@ -45,6 +61,13 @@
 <div class="header">
     <h1 style="text-align: center;">iCube Humanoid</h1>
     <p style="text-align: center;">Inspired from iCub. 1.5 Years of hard work.. He got 3 sibling across states right now...</p>
+</div>
+
+<!-- links -->
+<div class="flex-container-link" id="real">
+    <a href="#real">Actual Image</a> 
+    <a href="#pictorial">Pictorial Image</a> 
+    <a href="#3d">3D View</a> 
 </div>
 <hr>
 <h2 style="text-align:center">Real View</h2>
@@ -114,8 +137,13 @@
   <div>Small U beam</div>  
 </div>
 
+<br><br>
+<div class="flex-container-link"  id="pictorial">
+    <a href="#real">Actual Image</a> 
+    <a href="#pictorial">Pictorial Image</a> 
+    <a href="#3d">3D View</a> 
+</div>
 <!--Pictorial View -->
-<br><br><br><br><br>
 <hr>
 <h2 style="text-align:center">Pictoria View</h2>
 <hr>
@@ -184,15 +212,14 @@
 </div>
 
 
-
-
-
-
-
-
-
+<!-- links -->
+<br><br>
+<div class="flex-container-link" id="3d">
+    <a href="#real">Actual Image</a> 
+    <a href="#pictorial">Pictorial Image</a> 
+    <a href="#3d">3D View</a> 
+</div>
 <!-- 3D View -->
-<br><br><br><br><br>
 <hr>
 <h2 style="text-align:center">3D View</h2>
 <hr>
