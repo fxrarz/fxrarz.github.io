@@ -1,293 +1,205 @@
-<!DOCTYPE html>
 <html>
 <head>
-
-<title>iCube Humanoid</title>
-<link rel="stylesheet" type="text/css" href="homepagecss.css">
-<link rel="icon" href="https://raw.githubusercontent.com/fxrarz/fxrarz.github.io/main/icube/favicon.ico" type="image/png">
-
-<style>
-
-
-* {
-  box-sizing: border-box;
-  
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  background-color: Black;
-}
-.flex-container > div {
-  background-color: Black;
-  width: 250px;
-  margin-top: 5px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  color: white;
-}
-
-.flex-container-link {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-.flex-container-link > a {
-  
-  width: 250px;
-  margin-top: 0px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-}
-
-
-.header{
-  height:20vh;
-  text-align:center;
-  background-color:#ff7a00;
-}
-
-.p{
-color:black;
-text-align:center;
-}
-
-.text{
-  margin:0;
-  font-family:"Arial Black";
-  font-size:100px;
-  color:#fff;
-  text-shadow:1px 1px #dedede,
-    -2px 2px #dedede,
-    -3px 3px #dedede,
-    -4px 4px #dedede,
-    -5px 5px #dedede,
-    -6px 6px #dedede,
-    -12px 12px 25px rgba(0,0,0,0.5);
-}
-</style>
-
-
+	<title>iCube Humanoid</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="https://raw.githubusercontent.com/fxrarz/fxrarz.github.io/main/icube/favicon.ico" type="image/png">
 </head>
-
-
 <body>
+
 <div class="header">
-    <h1 class="text" data-text="iCube Humanoid"> iCube Humanoid</h1>
+    <h1 class="text"> iCube Humanoid</h1>
 </div>
-<p class="p">Inspired from iCub. 1.5 Years of hard work.. He got 3 sibling across states right now...</p>
+<p style="text-align:center">Inspired from iCub. 1.5 Years of hard work.. He got 3 sibling across states right now...</p>
+<br>
 
-<!-- links -->
-<div class="flex-container-link" id="real">
-    <a href="#real">Actual Image</a> 
-    <a href="#pictorial">Pictorial Image</a> 
-    <a href="#3d">3D View</a> 
+<div> 
+	<a href="#real" class="btn">Actual Image</a>
+	<a href="#pictorial" class="btn">Pictorial Image</a> 
+	<a href="#3d" class="btn">3D View</a> 
 </div>
-<hr>
-<h2 style="text-align:center">Real View</h2>
-<hr>
-
-<!-- Real View -->
-<!-- row 1 -->
-<div class="row">
-    <!--1 of 1-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Foot.jpg" alt="Foot" style="width:100%">
-  </div>
-  <!--2 of 1-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Interconnect Servo Bracket.jpg" alt="Interconnect Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 1-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Large U beam.jpg" alt="Large U beam" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Foot</div>
-  <div>Interconnect Servo Bracket</div>
-  <div>Large U beam</div>  
-</div>
-
-<!-- row 2 -->
-<div class="row">
-    <!--1 of 2-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Long U beam.jpg" alt="Long U beam" style="width:100%">
-  </div>
-  <!--2 of 2-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/L Shaped Interconnect Servo Bracket.jpg" alt="L Shaped Interconnect Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 2-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Metal Horn.jpg" alt="Metal Horn" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Long U beam</div>
-  <div>L Shaped Interconnect Servo Bracket</div>
-  <div>Metal Horn</div>  
-</div>
-
-<!-- row 3 -->
-<div class="row">
-    <!--1 of 3-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Obligated  U.jpg" alt="Obligated  U" style="width:100%">
-  </div>
-  <!--2 of 3-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Servo Bracket.jpg" alt="Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 3-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Small U beam.jpg" alt="Small U beam" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Obligated  U</div>
-  <div>Servo Bracket</div>
-  <div>Small U beam</div>  
-</div>
-
 <br><br>
-<div class="flex-container-link"  id="pictorial">
-    <a href="#real">Actual Image</a> 
-    <a href="#pictorial">Pictorial Image</a> 
-    <a href="#3d">3D View</a> 
-</div>
-<!--Pictorial View -->
-<hr>
-<h2 style="text-align:center">Pictorial View</h2>
+
+<h1  id="real" class="h1">Real View</h1>
 <hr>
 
-<!-- row 1 -->
+<!-- Real view-->
 <div class="row">
-    <!--1 of 1-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Foot.jpg" alt="Foot" style="width:100%">
-  </div>
-  <!--2 of 1-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Interconnect Servo Bracket.jpg" alt="Interconnect Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 1-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Large U beam.jpg" alt="Large U beam" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Foot</div>
-  <div>Interconnect Servo Bracket</div>
-  <div>Large U beam</div>  
-</div>
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Foot.jpg" alt="Foot" >
+		<figcaption> <h2>Foot </h2> </figcaption>
+		<span class="span">Foot</span>
+	</figure>
 
-<!-- row 2 -->
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Interconnect Servo Bracket.jpg" alt="Interconnect Servo Bracket" >
+		<figcaption> <h2>Interconnect Servo Bracket </h2> </figcaption>
+		<span class="span">Interconnect Servo Bracket</span>	
+	</figure>
+	
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Large U beam.jpg" alt="Large U beam" >
+		<figcaption> <h2>Large U beam</h2> </figcaption> 
+		<span class="span">Large U beam</span>	
+	</figure>
+</div>
+ 
 <div class="row">
-    <!--1 of 2-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Long U beam.jpg" alt="Long U beam" style="width:100%">
-  </div>
-  <!--2 of 2-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/L Shaped Interconnect Servo Bracket.jpg" alt="L Shaped Interconnect Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 2-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Metal Horn.jpg" alt="Metal Horn" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Long U beam</div>
-  <div>L Shaped Interconnect Servo Bracket</div>
-  <div>Metal Horn</div>  
+  	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Long U beam.jpg" alt="Long U beam" >
+		<figcaption> <h2>Long   U   beam </h2> </figcaption>
+		<span class="span">Long U beam </span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/L Shaped Interconnect Servo Bracket.jpg" alt="L Shaped Interconnect Servo Bracket" >
+		 <figcaption> <h2>L Shaped Interconnect Servo Bracket </h2> </figcaption>
+		<span class="span">L Shaped Interconnect Servo Bracket</span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Metal Horn.jpg" alt="Metal Horn" >
+		<figcaption> <h2>Metal Horn </h2> </figcaption>
+		<span class="span">Metal Horn</span>
+	</figure>
 </div>
 
-<!-- row 3 -->
 <div class="row">
-    <!--1 of 3-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Obligated  U.jpg" alt="Obligated  U" style="width:100%">
-  </div>
-  <!--2 of 3-->
-  <div class="column">  
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Servo Bracket.jpg" alt="Servo Bracket" style="width:100%">
-  </div>
-  <!--3 of 3-->
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Small U beam.jpg" alt="Small U beam" style="width:100%">
-  </div>
-</div>
-<div class="flex-container">
-  <div>Obligated  U</div>
-  <div>Servo Bracket</div>
-  <div>Small U beam</div>  
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Obligated  U.jpg" alt="Obligated  U" >
+		<figcaption> <h2>Obligated  U</h2> </figcaption>
+		<span class="span">Obligated  U</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Servo Bracket.jpg" alt="Servo Bracket" >
+		 <figcaption> <h2>Servo Bracket </h2> </figcaption>
+		<span class="span">Servo Bracket</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/design/Small U beam.jpg" alt="Small U beam" >
+		 <figcaption> <h2>Small U beam</h2> </figcaption>
+		<span class="span">Small U beam</span>
+	</figure> 
 </div>
 
-
-<!-- links -->
-<br><br>
-<div class="flex-container-link" id="3d">
-    <a href="#real">Actual Image</a> 
-    <a href="#pictorial">Pictorial Image</a> 
-    <a href="#3d">3D View</a> 
-</div>
-<!-- 3D View -->
 <hr>
-<h2 style="text-align:center">3D View</h2>
+<h1 id="pictorial" class="h1">Pictorial View</h1>
+<hr><!-- Pictorial view-->
+
+<div class="row">
+  	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Foot.jpg" alt="Foot" >
+		<figcaption> <h2>Foot </h2> </figcaption>
+		<span class="span">Foot</span>
+	</figure> 
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Interconnect Servo Bracket.jpg" alt="Interconnect Servo Bracket" >
+		<figcaption> <h2>Interconnect Servo Bracket </h2> </figcaption>
+		<span class="span">Interconnect Servo Bracket</span>	
+	</figure>
+	
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Large U beam.jpg" alt="Large U beam" >
+		<figcaption> <h2>Large U beam</h2> </figcaption> 
+		<span class="span">Large U beam</span>	
+	</figure> 
+</div>
+ 
+<div class="row">
+  	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Long U beam.jpg" alt="Long U beam" >
+		<figcaption> <h2>Long   U   beam </h2> </figcaption>
+		<span class="span">Long U beam </span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/L Shaped Interconnect Servo Bracket.jpg" alt="L Shaped Interconnect Servo Bracket" >
+		 <figcaption> <h2>L Shaped Interconnect Servo Bracket </h2> </figcaption>
+		<span class="span">L Shaped Interconnect Servo Bracket</span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		<img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Metal Horn.jpg" alt="Metal Horn" >
+		<figcaption> <h2>Metal Horn </h2> </figcaption>
+		<span class="span">Metal Horn</span>
+	</figure>
+</div>
+
+<div class="row">
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Obligated  U.jpg" alt="Obligated  U" >
+		<figcaption> <h2>Obligated  U</h2> </figcaption>
+		<span class="span">Obligated  U</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Servo Bracket.jpg" alt="Servo Bracket" >
+		 <figcaption> <h2>Servo Bracket </h2> </figcaption>
+		<span class="span">Servo Bracket</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Small U beam.jpg" alt="Small U beam" >
+		 <figcaption> <h2>Small U beam</h2> </figcaption>
+		<span class="span">Small U beam</span>
+	</figure> 
+</div>
+
+
 <hr>
-<!-- row 1 -->
+<h1 id="3d" class="h1">3D View</h1>
+<hr>
+
 <div class="row">
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Foot.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Interconnect Servo Bracket.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Large U beam.stl" width="440" height="400" scrolling="yes"> </iframe>
-</div>
-<div class="flex-container">
-  <div>Foot</div>
-  <div>Interconnect Servo Bracket</div>
-  <div>Large U beam</div>  
+	<figure class="snip0016">
+		<iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Foot.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Foot</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Interconnect Servo Bracket.stl" width="440" height="400" scrolling="yes"> </iframe>
+		 <span class="span">Interconnect Servo Bracket</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		 <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Large U beam.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Large U beam</span>
+	</figure> 
 </div>
 
-<!-- row 2 -->
 <div class="row">
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Long U beam.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/L Shaped Interconnect Servo Bracket.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Metal Horn.stl" width="440" height="400" scrolling="yes"> </iframe>
-</div>
-<div class="flex-container">
-  <div>Long U beam</div>
-  <div>L Shaped Interconnect Servo Bracket</div>
-  <div>Metal Horn</div>  
+  	<figure class="snip0016">
+		<iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Foot.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Long U beam </span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		 <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/L Shaped Interconnect Servo Bracket.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">L Shaped Interconnect Servo Bracket</span>
+	</figure>  	
+	
+	<figure class="snip0016">
+		<iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Metal Horn.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Metal Horn</span>
+	</figure>
 </div>
 
-
-<!-- row 3 -->
 <div class="row">
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Obligated  U.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Servo Bracket<.stl" width="440" height="400" scrolling="yes"> </iframe>
-    <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Small U beam.stl" width="440" height="400" scrolling="yes"> </iframe>
-</div>
-
-
-<div class="flex-container">
-  <div>Obligated  U</div>
-  <div>Servo Bracket</div>
-  <div>Small U beam</div>  
+	<figure class="snip0016">
+		<iframe src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Obligated  U.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Obligated  U</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		  <iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Servo Bracket<.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Servo Bracket</span>
+	</figure> 	
+	
+	<figure class="snip0016">
+		<iframe src="https://sharecad.org/cadframe/load?url=https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/diagram/Small U beam.stl" width="440" height="400" scrolling="yes"> </iframe>
+		<span class="span">Small U beam</span>
+	</figure> 
 </div>
 
 </body>
