@@ -3,6 +3,40 @@
 * {
   box-sizing: border-box;
 }
+.sidenav {
+  margin-top:40px;
+  margin-left:3px;
+  height: 90%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */	
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 5px;
+  border-radius:5px;
+  box-shadow: 2px 3px 2px 1px #ff7a00;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-shadow:5px 5px 5px 5px #ff7a00;
+  color: #ff7a00;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
 .header{
   height:20vh;
   text-align:center;
@@ -16,19 +50,7 @@
 color:black;
 text-align:center;
 }
-.btn {
-	float: left;
-	width: 33%;
-	padding: 5px;
-	height: auto;
-	font-size: x-large;
-	text-align: center;
-	margin: 2px;
-	border: 2px solid black;
-	text-decoration: none;
-	border-radius:25px 15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-}
+
 .text{
   margin:0;
   font-family:"Raleway";
