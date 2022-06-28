@@ -7,8 +7,11 @@
 <link rel="icon" href="https://raw.githubusercontent.com/fxrarz/fxrarz.github.io/main/icube/favicon.ico" type="image/png">
 
 <style>
+
+
 * {
   box-sizing: border-box;
+  
 }
 .column {
   float: left;
@@ -41,16 +44,40 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background-color: Orange;
 }
 .flex-container-link > a {
-  background-color: Pink;
+  
   width: 250px;
   margin-top: 0px;
   text-align: center;
   line-height: 50px;
   font-size: 20px;
-  color: Yellow;
+}
+
+
+.header{
+  height:20vh;
+  text-align:center;
+  background-color:#ff7a00;
+}
+
+.p{
+color:black;
+text-align:center;
+}
+
+.text{
+  margin:0;
+  font-family:"Arial Black";
+  font-size:100px;
+  color:#fff;
+  text-shadow:1px 1px #dedede,
+    -2px 2px #dedede,
+    -3px 3px #dedede,
+    -4px 4px #dedede,
+    -5px 5px #dedede,
+    -6px 6px #dedede,
+    -12px 12px 25px rgba(0,0,0,0.5);
 }
 </style>
 
@@ -60,9 +87,9 @@
 
 <body>
 <div class="header">
-    <h1 style="text-align: center;">iCube Humanoid</h1>
-    <p style="text-align: center;">Inspired from iCub. 1.5 Years of hard work.. He got 3 sibling across states right now...</p>
+    <h1 class="text" data-text="iCube Humanoid"> iCube Humanoid</h1>
 </div>
+<p class="p">Inspired from iCub. 1.5 Years of hard work.. He got 3 sibling across states right now...</p>
 
 <!-- links -->
 <div class="flex-container-link" id="real">
@@ -146,7 +173,7 @@
 </div>
 <!--Pictorial View -->
 <hr>
-<h2 style="text-align:center">Pictoria View</h2>
+<h2 style="text-align:center">Pictorial View</h2>
 <hr>
 
 <!-- row 1 -->
