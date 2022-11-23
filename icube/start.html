@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap project documentation theme for developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            iCube
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: September 20th, 2022</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">
+                                <h2 class="section-title">Download</h2>
+                                <div class="section-block">
+                                    <p>First star the repository 😁️ and download the files from github main branch. If needed have your own fork. 
+                                    </p>
+                                    <a href="https://github.com/fxrarz/iCube.git" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download </a>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="hardware-section" class="doc-section">
+                                <h2 class="section-title">Hardware</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Fabrication</h3>
+                                    <p>All the STL files of Humanoid are made available in the repo's <b>Assests</b> folder. Fabricate the parts using 3D printer or CNC machine (Recomended). In my robot i have used aluminium material. Assemble the chassis by refering the images in <a href="showcase.html">showcase</a> page.
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/Humanoid.jpg" alt="Final Assembly" width="55%">
+                                        <p>Final Assembly</p>
+                                    </div>
+                                    
+                                </div><!--//section-block-->
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">Servo Motor</h3>
+                                    <p>I have used high torque servo motor for actuation. The dimensions of the servo are 40 x 20 x 40.5mm (height, length, width). Kindly check the motor's dimension before buying. Make sure the motors have full metal gears. Even partial plastic leads to breakage of motor. Check whether the motor rotates or not before connecting to the chassis.
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/servo_motor.jpg" alt="Servo Motor" width="55%">
+                                        <p>Servo Motor</p>
+                                    </div>
+                                </div><!--//section-block-->
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">Motor Controller</h3>
+                                    <p>Any servo controller which can drive more than 17 servos will be suitable for our application. Make sure all motors receive enough voltage when connected. Here a PCB is integrated with servo driver, bluetooth and two arduino microcontroller is used.
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/servo_controller.jpg" alt="Servo Controller" width="55%">
+                                        <p>Servo Controller</p>
+                                    </div>
+                                    
+                                </div><!--//section-block-->
+                                <div id="step4"  class="section-block">
+                                    <h3 class="block-title">Processor</h3>
+                                    <p>For running ROS (Robot Operating System) and deep learning models a processor (Computer) is required. I have used my laptop for it. Instead of that Raspberry Pi or Jetson nano can also be used if you have enough budgets.
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/jetson_nano.jpg" alt="Servo Controller" width="55%">
+                                        <p>Computer (processor)</p>
+                                    </div>
+                                    
+                                </div><!--//section-block-->
+                                <div id="step5"  class="section-block">
+                                    <h3 class="block-title">Schematics</h3>
+                                    <p>The schematics is the very simplest part in our humanoid. 
+                                    <ol>
+                                        <li> Use a USB wire to connect the computer and arduino or any development board. </li> 
+                                        <li> Connect all the servo wires to the servo driver. </li>
+                                        <li> Use a shield or something to join the development board and the motor driver together. (In our case it is not required). </li>
+                                        <li> Connect the battery to the power port and join all the ground together. </li>
+                                    </ol>
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/servo_controller.jpg" alt="Servo Controller" width="55%">
+                                        <p>Wiring</p>
+                                    </div>
+                                    
+                                </div><!--//section-block-->
+                                <div id="step6"  class="section-block">
+                                    <h3 class="block-title">Power Supply</h3>
+                                    <p>Use a original Orange LiPo 12V battery and a balanced charger for recharging.
+                                    </p>
+                                    <div align="center">
+                                        <img src="https://raw.githubusercontent.com/fxrarz/iCube/main/Assets/assembly/servo_motor.jpg" alt="Servo Motor" width="55%">
+                                        <p>Battery</p>
+                                    </div>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            
+                            <section id="setup-section" class="doc-section">
+                                <h2 class="section-title">Environment Setup</h2>
+                                <div id="step7"  class="section-block">
+                                    <h3 class="block-title"> Operating System</h3>
+                                    <p>The ROS Noetic distro supports Ubuntu Focal & Debian Buster only. Similarily Melodic also supports certain release of Ubuntu and Debian. So, check your ROS distro choise supports for your current OS or install the right OS release. I have used Ubuntu Focal as my OS. Check this <a href="https://www.ros.org/reps/rep-0003.html">link</a>  for os and supported distro. Click this link for <a href="https://www.debian.org/download"> Debian </a> and this for <a href="https://ubuntu.com/download/desktop"> Ubuntu </a> (recommended) OS download</p>
+                                   
+                                    <div align="center">
+                                        <img src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" alt="Ubuntu OS" width="55%">
+                                        <p>Ubuntu OS</p>
+                                    </div>
+                                </div><!--//section-block-->
+                                
+                                <div id="step8"  class="section-block">
+                                    <h3 class="block-title"> Robot Operating System</h3>
+                                    <p>ROS Noetic distro supports my OS release. So i have installed it. Follow the given links for installation. <a href="https://wiki.ros.org/melodic/Installation"> Melodic </a>  or <a href="https://wiki.ros.org/noetic/Installation"> Noetic </a> (recommended)</p>
+                                   
+                                    <div align="center">
+                                        <img src="https://www.ros.org/imgs/logo-white.png" alt="ROS Framework" width="55%" height="100%" style="background-color: #15253e; padding: 5px;">
+                                        <p>ROS Framework</p>
+                                    </div>
+                                </div><!--//section-block-->
+                                
+                                <div id="step9"  class="section-block">
+                                    <h3 class="block-title"> ROS Package</h3>
+                                    <p>Final requirement in environment setup is ROS Serial package. This is used to estlabish a connection between computer and arduino board through a USB cable. Follow this <a href="https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup"> link </a> for installation. (Note: Replace your distro name in the commands)</p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            
+                            <section id="deploy-section" class="doc-section">
+                                <h2 class="section-title">Deploy</h2>
+                                <div id="step10"  class="section-block">
+                                    <h3 class="block-title"> Create a ROS Package</h3>
+                                    <pre><code class="language-git">$ cd "your-catkin-workspace"/src 
+$ catkin_create_pkg Humanoid-Robot rospy</code></pre>
+                                </div><!--//section-block-->
+                                
+                                <div id="step11" class="section-block">
+                                    <h3 class="block-title"> Make Scripts Executable</h3>
+                                    <pre><code class="language-git">$ roscd Humanoid-Robot/src 
+$ chmod +x *</code></pre>
+                                </div><!--//section-block-->
+                                
+                                <div id="step12" class="section-block">
+                                    <h3 class="block-title"> Burn Code to Arduino </h3>
+                                    <div align="center">
+                                        <img src="file:///home/whitebot/Pictures/Arduino%20IDE.png" alt="Arduino IDE" width="90%" height="100%">
+                                        <p>Arduino IDE</p>
+                                    </div>
+                                    <ol>
+                                        <li>Compile humanoid_debug.ino code. </li>
+                                        <li>Then select Tools ➡️ Board ➡️ Arduino UNO from menu bar.</li></li>
+                                        <li> Repeat the above steps to select port. </li>
+                                        <li>Finally upload the code to the development board. </li>
+                                    </ol>
+                                </div><!--//section-block-->
+                                
+                                <div id="step13" class="section-block">
+                                    <h3 class="block-title"> Run Script</h3>
+                                    <p>Run each command in a seperate terminal.</p>
+                                    <pre><code class="language-git">$ roscore</code></pre>
+                                    <pre><code class="language-git">$ rosrun Humanoid-Robot debug.py</code></pre>
+                                    <pre><code class="language-git">$ rosrun rosserial_python serial_node.py</code></pre>
+                                    <pre><code class="language-git">$ rqt_graph #Run this command to visualize all active nodes</code></pre>
+                                </div><!--//section-block-->
+                                <p>Enter servo number (range 1 to 18) and then its position (degree) (range 0 to 180) in 2nd terminal (debug.py)</p>
+                                
+                                
+                            </section><!--//doc-section-->
+                            
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#download-section">Download</a>
+		                            </li>
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#hardware-section">Hardware</a>
+		                            </li>
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step1">Fabrication</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step2">Servo Motor</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step3">Motor Controller</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step4">Processor</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step5">Schematics</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step6">Power Supply</a>
+	                                    </li>
+                                    </nav><!--//nav-->
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#setup-section">Environment Setup</a>
+                                    </li>
+                                    
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step7">Operating System</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step8">Robot Operating System
+</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step9">ROS Package</a>
+	                                    </li>
+                                    </nav><!--//nav-->
+                                    
+                                      <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#deploy-section">Deploy</a>
+                                    </li>
+                                    
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step10">Create a ROS Package</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step11">Make Scripts Executable
+</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step12">Burn Code to Arduino </a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step13"> Run Script </a>
+	                                    </li>
+                                    </nav><!--//nav-->
+                            
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+          
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">
+                Document copyright by <a href="https://github.com/fxrarz" target="_blank">Faraz Ahmed ASF</a> 
+                | Template designed by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>
+            </small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/prism/prism.js"></script>      
+    <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>                                                          
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
