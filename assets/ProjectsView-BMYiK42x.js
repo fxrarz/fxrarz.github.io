@@ -1,1 +1,0 @@
-import{_ as e,c as o,o as s,a as t}from"./index-CMMBW7C2.js";const c={},r={class:"about"},n=t("h1",null,"Work in progress!!",-1),_=[n];function a(i,d){return s(),o("div",r,_)}const f=e(c,[["render",a]]);export{f as default};
