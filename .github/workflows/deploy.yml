@@ -1,10 +1,10 @@
 name: Deploy Vue.js App to GitHub Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - master
-
+    branches: ["main"]
+    
 permissions:
   checks: write
   contents: read
