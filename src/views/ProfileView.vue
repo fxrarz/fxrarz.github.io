@@ -114,7 +114,7 @@ export default {
         <img class="logo" src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg">
         <div class="links">
           <p>Youtube - Faraz Official</p>
-          <small>6T+ followers</small>
+          <small>5+ followers</small>
         </div>
       </div>
       </a>
