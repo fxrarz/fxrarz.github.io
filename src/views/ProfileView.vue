@@ -154,7 +154,8 @@ export default {
       <p><b>Patents:</b> 2 patients (under process)</p>
       <p><b>Projects: </b>  
         <a href="https://genqr-web.web.app/" target="_blank" class="about-link">GenQR</a>, 
-        <a href="http://13.48.72.172/live" target="_blank" class="about-link">Studio Live</a>
+        <a href="http://13.48.72.172/live" target="_blank" class="about-link">Studio Live</a>,
+        <a href="http://13.48.72.172:7860" target="_blank" class="about-link">LightBolt</a>
       </p>
       <!-- <p><b>Work Experience:</b> Project Staff, Single</p> -->
       <p><b>Technology:</b> Tensorflow, OpenCV, Vue.js, Pandas, Gym, AWS, Firebase</p>
