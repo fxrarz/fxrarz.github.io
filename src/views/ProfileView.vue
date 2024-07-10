@@ -144,7 +144,7 @@ export default {
       <h3><b>About</b></h3>
       <img class="center"  src="@/assets/digital_twin_half.gif" />
       <p style="text-align: center;"><b>Digital Twins</b></p>
-      <p>Faraz Ahmed Abdul Settu (a.k.a) Faraz Ahmed is a Robotics and Artificial Intelligence Researcher doing his PhD in VIT University, India.</p>
+      <p>Faraz Ahmed Abdul Settu (a.k.a) Faraz Ahmed is a Robotics and Artificial Intelligence Researcher working as project associate (a.k.a) junior research fellow in VIT University, Chennai, India.</p>
       <p><b>Born:</b> DD-MM-2001 (age {{ Age }} years), <a href="http://www.google.com/search?q=Chennai" target="_blank"  class="about-link">Chennai, India</a></p>
       <p><b>Gender & Martial Status:</b> Male, Single</p>
       <p><b>Awards & Honors: </b> Hindustan Petrolium Corporation Limited, </p>
