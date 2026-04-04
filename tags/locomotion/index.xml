@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Locomotion | Faraz Ahmed | Embodied AI Engineer</title><link>https://fxrarz.github.io/tags/locomotion/</link><atom:link href="https://fxrarz.github.io/tags/locomotion/index.xml" rel="self" type="application/rss+xml"/><description>Locomotion</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><image><url>https://fxrarz.github.io/media/icon_hu_b7a7896a85bfabd7.png</url><title>Locomotion</title><link>https://fxrarz.github.io/tags/locomotion/</link></image><item><title>Humanoid Robot - Basic Motion Generation</title><link>https://fxrarz.github.io/projects/humanoid_robot_baic_motion/</link><pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate><guid>https://fxrarz.github.io/projects/humanoid_robot_baic_motion/</guid><description>&lt;p&gt;A 17 Degree-of-Freedom (DoF) small humanoid robot without dexterous hand was controlled as a open-loop system. It has its own battery, motor driver and controller. The following action sequences was meticulously crafed to maintain balance and avoid fall.&lt;/p&gt;
+&lt;h2 id="greetings"&gt;Greetings&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D9-itOW8qZg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Basic greeting actions were performed.&lt;/p&gt;
+&lt;h2 id="football-kick"&gt;Football Kick&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8uqxAh4KmHA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Standing on one leg while active balance is difficult for humans. Here the humanoid robot is made to stand in one leg and made to do ball kick action.&lt;/p&gt;
+&lt;h2 id="walking"&gt;Walking&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/g-9OWxfsHx4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;The primary challenge with legged humanoids lies in balance control. With only two legs, the support polygon reduces to a line. If the robot’s center of gravity (CG) moves beyond this support line, a fall becomes inevitable. Actively maintaining the CG within this boundary is therefore critical during walking, running, stair climbing, and even idle standing.&lt;/p&gt;
+&lt;!-- ## Motion Control using DL
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UsmOGdB1qRQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+--&gt;
+&lt;!-- ## Bipedal DRL in 2D sim --&gt;
+&lt;h2 id="key-features"&gt;Key Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mimic prerecorded actions&lt;/li&gt;
+&lt;li&gt;Untethred system&lt;/li&gt;
+&lt;li&gt;On-board computation unit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="major-challenges"&gt;Major Challenges&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Control of open-loop systems&lt;/li&gt;
+&lt;li&gt;High computational demand for training and inference&lt;/li&gt;
+&lt;li&gt;Actuator variations leading to gait instability or falls&lt;/li&gt;
+&lt;li&gt;Complex and error-prone wire management&lt;/li&gt;
+&lt;li&gt;Limited funding, time, and expertise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ## Product Gallery --&gt;
+&lt;!-- &lt;div class="gallery slideshow-container" style="position: relative; max-width: 800px; margin: auto; background: #f1f1f1;"&gt;
+&lt;img src="gallery/img0.jpg" alt="Event photo 1" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img1.jpg" alt="Event photo 2" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img2.jpg" alt="Event photo 3" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img3.jpg" alt="Event photo 4" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img4.jpg" alt="Event photo 5" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img5.jpg" alt="Event photo 6" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img6.jpg" alt="Event photo 7" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;a class="prev" onclick="changeSlide(-1)" style="cursor: pointer; position: absolute; top: 50%; left: 10px; font-size: 18px; padding: 16px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 3px; z-index: 100;"&gt;❮&lt;/a&gt;
+&lt;a class="next" onclick="changeSlide(1)" style="cursor: pointer; position: absolute; top: 50%; right: 10px; font-size: 18px; padding: 16px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 3px; z-index: 100;"&gt;❯&lt;/a&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.slideshow-container img {
+display: none !important;
+width: 100%;
+height: auto;
+}
+.slideshow-container img.active {
+display: block !important;
+}
+&lt;/style&gt;
+&lt;script&gt;
+let slideIndex = 1;
+let autoplayInterval = null;
+let autoplayEnabled = "true" === "true";
+const speed = parseInt("3000");
+function changeSlide(n) {
+clearInterval(autoplayInterval);
+autoplayEnabled = false;
+showSlide(slideIndex += n);
+}
+function showSlide(n) {
+let slides = document.querySelectorAll('.slideshow-container img');
+if (n &gt; slides.length) { slideIndex = 1 }
+if (n &lt; 1) { slideIndex = slides.length }
+slides.forEach(s =&gt; s.classList.remove('active'));
+slides[slideIndex - 1].classList.add('active');
+}
+function startAutoplay() {
+autoplayInterval = setInterval(() =&gt; {
+slideIndex++;
+showSlide(slideIndex);
+}, speed);
+}
+showSlide(slideIndex);
+if (autoplayEnabled) startAutoplay();
+&lt;/script&gt;&lt;/script&gt; --&gt;
+&lt;!-- https://www.pixelcut.ai/ai-image-editor?tool=removeBackground --&gt;</description></item></channel></rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Optimal Code | Faraz Ahmed | Embodied AI Engineer</title><link>https://fxrarz.github.io/tags/optimal-code/</link><atom:link href="https://fxrarz.github.io/tags/optimal-code/index.xml" rel="self" type="application/rss+xml"/><description>Optimal Code</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate><image><url>https://fxrarz.github.io/media/icon_hu_b7a7896a85bfabd7.png</url><title>Optimal Code</title><link>https://fxrarz.github.io/tags/optimal-code/</link></image><item><title>Pandas - Appending Cost</title><link>https://fxrarz.github.io/blog/pandas/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://fxrarz.github.io/blog/pandas/</guid><description>&lt;p&gt;For Robotics and Data Science projects i use Pandas for data collect and storage. Especially, for collecting live data from simulators for Behavior Cloning (BC), Pandas is handy for its consistency.&lt;/p&gt;
+&lt;p&gt;During data collection, each data from simulator can be either appended to a existing list or dataframe which will be saved at the end. For multiple sensor data Pandas will be prefered over list due to multi-column insertion.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Code simulating contiguous memory
+import pandas as pd
+import time
+num_cols = 5000 # Increasing this makes the &amp;quot;copy&amp;quot; operation much heavier
+df = pd.DataFrame(columns=[f'c{i}' for i in range(num_cols)])
+# This loop slows down gradually
+for i in range(2500):
+start = time.time()
+df.loc[len(df)] = [1.1] * num_cols
+print(f&amp;quot;Row {i}: {time.time() - start}s&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Well everything might look good unless the data collection loop runs for 2000 iterations or more. Yes. That&amp;rsquo;s the breaking point. Technically, nothing is broken. Just your computer slows down (1 row insertion takes 3 seconds or more and increases) which is alot.&lt;/p&gt;
+&lt;p&gt;Its not your computer limitation or problem will Python. Just wrong function selection for the use case. We are dealing will DataFrame Fragmentation problem or Contiguous memory.&lt;/p&gt;
+&lt;p&gt;To understand this better, you need to know how computers store data. Contiguous memory means data is stored in one single, unbroken block in the computer&amp;rsquo;s RAM (like a row of houses with no gaps).&lt;/p&gt;
+&lt;p&gt;Pandas uses this method because it makes reading data very fast. However, it makes adding data very slow.&lt;/p&gt;
+&lt;p&gt;In my case, when you i use .loc to add a new row to a DataFrame, Pandas cannot simply &amp;ldquo;attach&amp;rdquo; the data to the end of the existing block. Usually, the space next to that block is already being used by other data.&lt;/p&gt;
+&lt;p&gt;To keep the memory contiguous, Pandas must:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Find a new, empty area of memory that is large enough for the entire new DataFrame.
+Copy every single old row into this new area.
+Add the new row at the end.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As your loop runs, the DataFrame gets bigger. This means the computer spends more and more time copying data. If you have N rows, the time it takes grows at a rate of N² (Quadratic Time). This is why the loop over 2,000 iteration or more will be much slower.&lt;/p&gt;
+&lt;p&gt;The slow down time increases gradually. But, no issues with 300 or 500 steps. Beyond that you can watch a movie.&lt;/p&gt;
+&lt;p&gt;The best way to solve this issue is to avoid using a DataFrame until the very end. Instead, use a Python List.&lt;/p&gt;
+&lt;p&gt;Python Lists are designed to grow. They do not require a full copy of the data every time a new data item is added. Adding an item to a list is a Constant Time operation (O(1)), meaning it stays fast no matter how big the list is.&lt;/p&gt;
+&lt;p&gt;Then do Batch Construction. All collected in the list first will be converted as DataFrame once. This way i have reduced the data collection time.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Solution for contiguous memory
+import pandas as pd
+import time
+num_cols = 5000 # Increasing this makes the &amp;quot;copy&amp;quot; operation much heavier
+data_buffer = [] # list to store data
+# This loop stays fast from start to finish
+for i in range(2500):
+start = time.time()
+# Appending to a list is O(1)
+data_buffer.append([1.1] * num_cols)
+print(f&amp;quot;Row {i}: {time.time() - start}s&amp;quot;)
+# Creating the DataFrame at the end is O(N)
+df = pd.DataFrame(data_buffer, columns=[f'c{i}' for i in range(num_cols)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hope will be helpful for someone like me. Learned this hard way.&lt;/p&gt;
+&lt;p&gt;Thanks for Reading.&lt;/p&gt;</description></item></channel></rss>

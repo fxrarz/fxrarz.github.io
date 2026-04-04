@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Traverse Mechanism | Faraz Ahmed | Embodied AI Engineer</title><link>https://fxrarz.github.io/tags/traverse-mechanism/</link><atom:link href="https://fxrarz.github.io/tags/traverse-mechanism/index.xml" rel="self" type="application/rss+xml"/><description>Traverse Mechanism</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://fxrarz.github.io/media/icon_hu_b7a7896a85bfabd7.png</url><title>Traverse Mechanism</title><link>https://fxrarz.github.io/tags/traverse-mechanism/</link></image><item><title>Traverse Mechanism</title><link>https://fxrarz.github.io/projects/traverse_mechanism/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://fxrarz.github.io/projects/traverse_mechanism/</guid><description>&lt;p&gt;A powerful traverse mechanism designed to move a 5 kg payload with high precision of up to 0.1 mm.&lt;/p&gt;
+&lt;h2 id="key-features"&gt;Key Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wireless display accessible from mobile or laptop&lt;/li&gt;
+&lt;li&gt;Built-in WiFi network&lt;/li&gt;
+&lt;li&gt;Clean and minimal UI/UX&lt;/li&gt;
+&lt;li&gt;Machine-hosted web interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="engineering-challenge"&gt;Engineering Challenge:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Web interface must be fully self-contained with no external libraries due to internet restrictions&lt;/li&gt;
+&lt;li&gt;Extremely small UI footprint required because of limited memory&lt;/li&gt;
+&lt;li&gt;Controller must host the network, serve the web app, and handle motion control simultaneously&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="product-gallery"&gt;Product Gallery&lt;/h2&gt;
+&lt;div class="gallery slideshow-container" style="position: relative; max-width: 800px; margin: auto; background: #f1f1f1;"&gt;
+&lt;img src="gallery/img0.jpg" alt="Event photo 1" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img1.jpg" alt="Event photo 2" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;img src="gallery/img2.jpg" alt="Event photo 3" width="400" style="max-width: 100%; height: auto; display: none;"&gt;
+&lt;a class="prev" onclick="changeSlide(-1)" style="cursor: pointer; position: absolute; top: 50%; left: 10px; font-size: 18px; padding: 16px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 3px; z-index: 100;"&gt;❮&lt;/a&gt;
+&lt;a class="next" onclick="changeSlide(1)" style="cursor: pointer; position: absolute; top: 50%; right: 10px; font-size: 18px; padding: 16px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 3px; z-index: 100;"&gt;❯&lt;/a&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.slideshow-container img {
+display: none !important;
+width: 100%;
+height: auto;
+}
+.slideshow-container img.active {
+display: block !important;
+}
+&lt;/style&gt;
+&lt;script&gt;
+let slideIndex = 1;
+let autoplayInterval = null;
+let autoplayEnabled = "true" === "true";
+const speed = parseInt("3000");
+function changeSlide(n) {
+clearInterval(autoplayInterval);
+autoplayEnabled = false;
+showSlide(slideIndex += n);
+}
+function showSlide(n) {
+let slides = document.querySelectorAll('.slideshow-container img');
+if (n &gt; slides.length) { slideIndex = 1 }
+if (n &lt; 1) { slideIndex = slides.length }
+slides.forEach(s =&gt; s.classList.remove('active'));
+slides[slideIndex - 1].classList.add('active');
+}
+function startAutoplay() {
+autoplayInterval = setInterval(() =&gt; {
+slideIndex++;
+showSlide(slideIndex);
+}, speed);
+}
+showSlide(slideIndex);
+if (autoplayEnabled) startAutoplay();
+&lt;/script&gt;&lt;/script&gt;</description></item></channel></rss>

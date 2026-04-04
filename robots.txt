@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://fxrarz.github.io/sitemap.xml
